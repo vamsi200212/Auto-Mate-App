@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    app:cardElevation="15dp"
+    android:id="@+id/card"
+    app:cardCornerRadius="5dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/bunk_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bunk"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+                <TextView
+                    android:id="@+id/navigateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#0e9ac8"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Click here to navigate."
+                    android:textSize="8sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="1">
+
+                    <TextView
+                        android:id="@+id/bunk_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kishore Petrol Bunk"
+                        android:fontFamily="@font/dm_sans_medium"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintVertical_bias="0"/>
+                    <ImageView
+                        android:id="@+id/divider"
+                        android:layout_width="0dp"
+                        android:layout_height="0.1dp"
+                        android:background="@color/black"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintVertical_bias="0"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/bunk_name"
+                        app:layout_constraintLeft_toLeftOf="@id/bunk_name"
+                        app:layout_constraintRight_toRightOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/air"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Air Availability - "
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/dm_sans_medium"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/location"
+                        app:layout_constraintLeft_toLeftOf="@id/bunk_name"/>
+
+                    <ImageView
+                        android:id="@+id/air1"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        app:tint="#0e9ac8"
+                        android:src="@drawable/check"
+                        app:layout_constraintLeft_toRightOf="@id/air"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/air"
+                        app:layout_constraintBottom_toBottomOf="@id/air"
+                        app:layout_constraintHorizontal_bias="0"/>
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location - "
+                        android:textSize="10sp"
+                        android:fontFamily="@font/dm_sans_medium"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintVertical_bias="0"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/divider"
+                        app:layout_constraintLeft_toLeftOf="@id/bunk_name"/>
+                    <TextView
+                        android:id="@+id/location1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LB Nagar"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/dm_sans_medium"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintBottom_toBottomOf="@id/location"
+                        app:layout_constraintTop_toTopOf="@id/location"
+                        app:layout_constraintLeft_toRightOf="@id/location"/>
+
+                    <ImageView
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        app:tint="#0e9ac8"
+                        android:src="@drawable/ic_baseline_location_on_24"
+                        app:layout_constraintLeft_toRightOf="@id/location1"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/location1"
+                        app:layout_constraintBottom_toBottomOf="@id/location1"
+                        app:layout_constraintHorizontal_bias="0.01"/>
+
+                    <TextView
+                        android:id="@+id/petrol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Petrol - ₹ "
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/dm_sans_medium"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintBottom_toBottomOf="@id/air"
+                        app:layout_constraintTop_toTopOf="@id/air"
+                        app:layout_constraintLeft_toLeftOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/petrol_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/dm_sans_medium"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintBottom_toBottomOf="@id/air"
+                        app:layout_constraintTop_toTopOf="@id/air"
+                        app:layout_constraintLeft_toRightOf="@id/petrol"/>
+
+                    <TextView
+                        android:id="@+id/diesel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diesel - ₹ "
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/dm_sans_medium"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHorizontal_bias="0.4"
+                        app:layout_constraintBottom_toBottomOf="@id/air"
+                        app:layout_constraintTop_toTopOf="@id/air"
+                        app:layout_constraintLeft_toRightOf="@id/petrol_price"/>
+
+                    <TextView
+                        android:id="@+id/diesel_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/dm_sans_medium"
+                        app:layout_constraintRight_toRightOf="@id/divider"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintBottom_toBottomOf="@id/air"
+                        app:layout_constraintTop_toTopOf="@id/air"
+                        app:layout_constraintLeft_toRightOf="@id/diesel"/>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
