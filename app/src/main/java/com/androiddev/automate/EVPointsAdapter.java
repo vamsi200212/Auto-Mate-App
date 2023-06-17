@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
@@ -30,6 +31,7 @@ public class EVPointsAdapter extends FirebaseRecyclerAdapter<PumpsModel, EVPoint
 //        Glide.with(holder.img.getContext()).load(model.getImg()).into(holder.img);
         holder.name.setText(model.getPumpName());
         holder.location.setText(model.getLocation());
+        Glide.with(holder.pic.getContext()).load(model.getImg()).into(holder.pic);
         this.model1 = model;
         holder.card.setOnClickListener(new View.OnClickListener() {
             @Override
