@@ -23,16 +23,10 @@ This project demonstrates effective utilization of Java, Android Studio, and Fir
 
 ![Alt Text](https://drive.google.com/uc?id=1TwUVzSmCJgOa99gIXubxL7NV3VPWymV9)
 
-![Alt Text](https://drive.google.com/uc?id=1tZWdyoHefTPMSrORoCVhkq7fEBy4B6iE)
+![Alt Text](https://drive.google.com/uc?id=1TuVvBdajmoWv31qV8D6KARAt31iEqxDS)
 
-![Alt Text](https://drive.google.com/uc?id=1nqjNh92wQRHBmrEydMREwwEGWh8UZAJQ)
+![Alt Text](https://drive.google.com/uc?id=1Tq_jZHb-w71k4ohb0WC3VNXuS7tzrC6A)
 
-![Alt Text](https://drive.google.com/uc?id=1-jcTgNY4q5VX2YFqYeNnCN2Np-qJ-MwF)
+![Alt Text](https://drive.google.com/uc?id=1Ttx_Ms5WPIwHjDTLe0Ms2TcBJYIKLO9a)
 
-![Alt Text](https://drive.google.com/uc?id=1CH5KgJmB2mwM4XAQhwe7fKwRksmk8iid)
-
-![Alt Text](https://drive.google.com/uc?id=1c7F3iX-yrso8An-ECxSN4ZQXIDL2CjD6)
-
-![Alt Text](https://drive.google.com/uc?id=1KGXNh88q5Sfwa7ZSQmKuT32N5fvUFkyD)
-
-![Alt Text](https://drive.google.com/uc?id=1Ocxt0rmh6cw_T0EshQF69Wafh9gqiPCq)
+![Alt Text](https://drive.google.com/uc?id=1TqWbJKitpsNB0y6C9y5bjLHopt8ANbsB)
